@@ -4,7 +4,14 @@
    <meta charset="UTF-8">
    <title>Home - Default</title>
 </head>
+
+{% include 'base.html.twig' %}
+
 <body>
    <h1>Bienvenue !</h1>
 </body>
+
+{% block javascripts %}
+{{ encore_entry_script_tags('app') }}
+{% endblock %}
 </html>
